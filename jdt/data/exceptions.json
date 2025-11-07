@@ -1,0 +1,25 @@
+[
+  {
+    "id": "e2b9537c-42e6-4e37-af23-a7340d85f672",
+    "type": "commitless",
+    "name": "kickoff",
+    "description": "Introduction du projet par XCL",
+    "date": "2025-11-07T15:26",
+    "duration": 60,
+    "status": "Done",
+    "author": "latifcodess"
+  },
+  {
+    "id": "30a287dd-38ec-4d8a-860c-ecd3c1c86841",
+    "type": "commitpatch",
+    "sha": "54d533e5747c42ac418bf2b913df26691969700b",
+    "url": "https://github.com/latifcodess/p-bulle-exercices-js-start/commit/54d533e5747c42ac418bf2b913df26691969700b",
+    "name": "feat(lasagna): exercice terminé",
+    "description": "",
+    "date": "2025-11-07T13:25:00.000Z",
+    "duration": 10,
+    "status": "Done",
+    "author": "latifcodess",
+    "patch": true
+  }
+]
