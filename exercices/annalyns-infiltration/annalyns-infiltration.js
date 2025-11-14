@@ -27,13 +27,8 @@
  * @return {boolean} Whether or not you can execute a fast attack.
  */
 export function canExecuteFastAttack(knightIsAwake) {
-
-  if (knightIsAwake = false){
-    return true;
-  }
-  else{
-    return false;
-  }
+  // verifie si knight est reveillé
+  return !knightIsAwake;
 }
 
 /**
@@ -46,30 +41,8 @@ export function canExecuteFastAttack(knightIsAwake) {
  * @returns {boolean} Whether or not you can spy on someone.
  */
 export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
-  if ((knightIsAwake = false) && (archerIsAwake = false) && (prisonerIsAwake = false)){
-    return false;
-  }
-  else if (prisonerIsAwake = true){
-    return true;
-  }
-  else if (archerIsAwake = true){
-    return true;
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = true) && (prisonerIsAwake = true)){
-    return true;
-  }
-  else if (knightIsAwake = true){
-    return true;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = false) && (prisonerIsAwake = true)){
-    return true;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = true) && (prisonerIsAwake = true)){
-    return true;
-  }
-  else{
-    return false;
-  }
+  // verifie si au moin un d'eux est reveillé
+  return knightIsAwake || archerIsAwake || prisonerIsAwake;
 }
 
 /**
@@ -81,21 +54,8 @@ export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
  * @returns {boolean} Whether or not you can send a signal to the prisoner.
  */
 export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
-  if ((archerIsAwake = false) && (prisonerIsAwake = false)){
-    return false;
-  }
-  else if ((archerIsAwake = false) && (prisonerIsAwake = true)){
-    return true;
-  }
-  else if ((archerIsAwake = true) && (prisonerIsAwake = false)){
-    return false;
-  }
-  else if ((archerIsAwake = true) && (prisonerIsAwake = true)){
-    return false;
-  }
-  else {
-    return false;
-  }
+  // verifie si le prisonnier est reveillé et que l'archer dort
+  return prisonerIsAwake && !archerIsAwake;
 }
 
 /**
@@ -114,55 +74,7 @@ export function canFreePrisoner(
   prisonerIsAwake,
   petDogIsPresent,
 ) {
-  if ((knightIsAwake = false) && (archerIsAwake = false) && (prisonerIsAwake = false) && (petDogIsPresent = false)){
-    return false;
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = false) && (prisonerIsAwake = false) && (petDogIsPresent = true)){
-    return true;
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = false) && (prisonerIsAwake = true) && (petDogIsPresent = false)){
-    return true;
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = false) && (prisonerIsAwake = true) && (petDogIsPresent = true)){
-    return true;
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = true) && (prisonerIsAwake = false) && (petDogIsPresent = false)){
-    return false;
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = true) && (prisonerIsAwake = false) && (petDogIsPresent = true)){
-    return false
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = true) && (prisonerIsAwake = true) && (petDogIsPresent = false)){
-    return false;
-  }
-  else if ((knightIsAwake = false) && (archerIsAwake = true) && (prisonerIsAwake = true) && (petDogIsPresent = true)){
-    return false;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = false) && (prisonerIsAwake = false) && (petDogIsPresent = false)){
-    return false;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = false) && (prisonerIsAwake = false) && (petDogIsPresent = true)){
-    return true;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = false) && (prisonerIsAwake = true) && (petDogIsPresent = false)){
-    return false;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = false) && (prisonerIsAwake = true) && (petDogIsPresent = true)){
-    return true;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = true) && (prisonerIsAwake = false) && (petDogIsPresent = false)){
-    return false;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = true) && (prisonerIsAwake = false) && (petDogIsPresent = true)){
-    return false;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = true) && (prisonerIsAwake = true) && (petDogIsPresent = false)){
-    return false;
-  }
-  else if ((knightIsAwake = true) && (archerIsAwake = true) && (prisonerIsAwake = true) && (petDogIsPresent = true)){
-    return false;
-  }
-  else{
-    return false;
-  }
+  // verifie si le chien est present et que l'archer dort
+  // ou que le chien n'est pas la et que le prisonnier est reveillé et que le chevalier et l'archer dorment
+  return (petDogIsPresent && !archerIsAwake) || (!petDogIsPresent && prisonerIsAwake && !knightIsAwake && !archerIsAwake);
 }
