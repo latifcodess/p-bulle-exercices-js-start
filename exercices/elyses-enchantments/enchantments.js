@@ -9,7 +9,8 @@
  * @returns {number} the card
  */
 export function getItem(cards, position) {
-  throw new Error('Implement the getItem function');
+  // affiche une carte à une position précise
+  return cards[position];
 }
 
 /**
@@ -22,7 +23,9 @@ export function getItem(cards, position) {
  * @returns {number[]} the cards with the change applied
  */
 export function setItem(cards, position, replacementCard) {
-  throw new Error('Implement the setItem function');
+  // remplace une carte
+  cards[position] = replacementCard;
+  return cards;
 }
 
 /**
@@ -34,7 +37,10 @@ export function setItem(cards, position, replacementCard) {
  * @returns {number[]} the cards with the newCard applied
  */
 export function insertItemAtTop(cards, newCard) {
-  throw new Error('Implement the insertItemAtTop function');
+  // ajoute une carte à la fin du tableau
+  cards.push(newCard);
+
+  return cards;
 }
 
 /**
@@ -46,7 +52,10 @@ export function insertItemAtTop(cards, newCard) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItem(cards, position) {
-  throw new Error('Implement the removeItem function');
+  // supprime une carte à une position précise
+  cards.splice(position, 1);
+
+  return cards;
 }
 
 /**
@@ -57,7 +66,10 @@ export function removeItem(cards, position) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItemFromTop(cards) {
-  throw new Error('Implement the removeItemFromTop function');
+  // supprime la derniere carte du tableau
+  cards.pop();
+
+  return cards;
 }
 
 /**
@@ -69,7 +81,10 @@ export function removeItemFromTop(cards) {
  * @returns {number[]} the cards including the new card
  */
 export function insertItemAtBottom(cards, newCard) {
-  throw new Error('Implement the insertItemAtBottom function');
+  // ajoute une carte au debut du tableau
+  cards.unshift(newCard);
+
+  return cards;
 }
 
 /**
@@ -80,7 +95,10 @@ export function insertItemAtBottom(cards, newCard) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItemAtBottom(cards) {
-  throw new Error('Implement the removeItemAtBottom function');
+  // supprime la derniere carte du tableau
+  cards.shift();
+
+  return cards;
 }
 
 /**
@@ -92,5 +110,6 @@ export function removeItemAtBottom(cards) {
  * @returns {boolean} true if there are exactly stackSize number of cards, false otherwise
  */
 export function checkSizeOfStack(cards, stackSize) {
-  throw new Error('Implement the checkSizeOfStack function');
+  // verifie si la taille du tableau est celle indiqué dans le param stackSize
+  return cards.length === stackSize;
 }
