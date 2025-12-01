@@ -15,7 +15,7 @@ export class BankAccount {
 
   open() {
     // si le compte est deja ouvert : erreur
-    if(this.isClosed == false){
+    if(!this.isClosed){
       throw new ValueError();
     }
     // sinon le compte s'ouvre et la Balance se met à 0
@@ -28,7 +28,7 @@ export class BankAccount {
 
   close() {
     // si le compte est deja fermé : erreur
-    if(this.isClosed == true){
+    if(this.isClosed){
       throw new ValueError();
     }
     // sinon on ferme le compte
@@ -39,7 +39,7 @@ export class BankAccount {
 
   deposit(depos) {
     // si le compte est fermé : erreur
-    if(this.isClosed == true){
+    if(this.isClosed){
       throw new ValueError();
     }
     else{
@@ -56,7 +56,7 @@ export class BankAccount {
 
   withdraw(wdraw) {
     // si le compte est fermé : erreur
-    if(this.isClosed == true){
+    if(this.isClosed){
       throw new ValueError();
     }
     else {
@@ -73,7 +73,7 @@ export class BankAccount {
 
   get balance() {
     // si le compte est fermé : erreur
-    if(this.isClosed == true){
+    if(this.isClosed){
       throw new ValueError();
     }
     // sinon on retourne Balance
