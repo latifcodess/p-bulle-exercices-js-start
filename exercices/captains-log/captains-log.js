@@ -26,5 +26,5 @@ export function randomStardate() {
 export function randomPlanetClass() {
   const myStr = "DHJKLMNRTY";
 
-  return myStr[Math.round(Math.random())];
+  return myStr[Math.floor(Math.random() * myStr.length)];
 }
