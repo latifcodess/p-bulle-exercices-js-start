@@ -85,5 +85,70 @@
     "date": "2025-12-05T12:35:00.000Z",
     "duration": 40,
     "status": "Done"
+  },
+  {
+    "id": "5776617f-8c2d-47d0-8f71-a845261070e2",
+    "type": "commitpatch",
+    "sha": "ad0c6c217ba7d394b2fb145fce10866e9fb19363",
+    "url": "https://github.com/latifcodess/p-bulle-exercices-js-start/commit/ad0c6c217ba7d394b2fb145fce10866e9fb19363",
+    "name": "feat(train-driver): exercice terminé",
+    "description": "j'ai mis 2h a le faire car la première fonction m'a posé problème car je ne comprenais pas les ... et le dernier aussi car je ne comprenais pas comment je pouvais séparer des champs dans un objet",
+    "date": "2025-12-05T16:17",
+    "duration": 140,
+    "status": "Done",
+    "author": "latifcodess",
+    "patch": true
+  },
+  {
+    "id": "126acfc8-321f-4f3a-af2c-8f6d357c69ec",
+    "type": "commitpatch",
+    "sha": "16b401c90c471101027a28b247448c717afebf5e",
+    "url": "https://github.com/latifcodess/p-bulle-exercices-js-start/commit/16b401c90c471101027a28b247448c717afebf5e",
+    "name": "feat(bob): exercice terminé",
+    "description": "j'ai mis 2h a le faire car je n'utilisai pas de regex pour verifier les majuscules et les minuscules et j'ai mis du temp à comprendre que je devais en utiliser",
+    "date": "2025-12-02T10:13:00.000Z",
+    "duration": 120,
+    "status": "Done",
+    "author": "latifcodess",
+    "patch": true
+  },
+  {
+    "id": "796bbc7a-262b-4c70-80fc-cd0acdda218a",
+    "type": "commitpatch",
+    "sha": "dff4a4829a1c643da11d8e4da4a4f4afbd4d5d48",
+    "url": "https://github.com/latifcodess/p-bulle-exercices-js-start/commit/dff4a4829a1c643da11d8e4da4a4f4afbd4d5d48",
+    "name": "feat(captains-log): exercice pas finit",
+    "description": "j'ai mis 2h a le faire car dans la derniere fonction je n'arrivais pas a faire un calcule pourtant simple",
+    "date": "2025-11-28T15:33:00.000Z",
+    "duration": 120,
+    "status": "WIP",
+    "author": "latifcodess",
+    "patch": true
+  },
+  {
+    "id": "2714238e-a358-475c-85f6-404bfe658f8f",
+    "type": "commitpatch",
+    "sha": "f052bfcef2b8eb563407f520bc6837b1ae38ebcc",
+    "url": "https://github.com/latifcodess/p-bulle-exercices-js-start/commit/f052bfcef2b8eb563407f520bc6837b1ae38ebcc",
+    "name": "feat(amusement-park): exercice finis",
+    "description": "j'ai mis 2h a le faire car pour la troisième fonction je n'arrivais pas à utiliser les operateurs ternaires",
+    "date": "2025-11-21T15:33:00.000Z",
+    "duration": 130,
+    "status": "Done",
+    "author": "latifcodess",
+    "patch": true
+  },
+  {
+    "id": "fcda1d40-f9cf-497e-aece-7e75343e9afa",
+    "type": "commitpatch",
+    "sha": "fa6d1d68fb833e2a83c18f2adc6678ad69f4315e",
+    "url": "https://github.com/latifcodess/p-bulle-exercices-js-start/commit/fa6d1d68fb833e2a83c18f2adc6678ad69f4315e",
+    "name": "feat(freelancer-rates): éxercice finit",
+    "description": "j'ai mis 2h a le faire car le dernier calcule m'a posé beaucoup de problème",
+    "date": "2025-11-14T15:17:00.000Z",
+    "duration": 155,
+    "status": "Done",
+    "author": "latifcodess",
+    "patch": true
   }
 ]
