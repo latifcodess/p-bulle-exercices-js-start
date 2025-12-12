@@ -12,12 +12,14 @@
  */
 export function needsLicense(kind) {
   // verifie si le vehicule est un car ou un truck
-  if (kind == "car" || kind == "truck"){
+  /*if (kind == "car" || kind == "truck"){
     return true;
   }
   else{
     return false;
-  }
+  }*/
+
+  return (kind == "car" || kind == "truck") ? true : false;
 }
 
 /**
@@ -30,12 +32,16 @@ export function needsLicense(kind) {
  */
 export function chooseVehicle(option1, option2) {
   // verifie si option1 est avant option2 dans la table ASCII
-  if (option1 < option2){
+  /*if (option1 < option2){
     return option1 + " is clearly the better choice.";
   }
   else{
     return option2 + " is clearly the better choice.";
-  }
+  }*/
+
+  return (option1 < option2) 
+         ? option1 + " is clearly the better choice." 
+         : option2 + " is clearly the better choice."
 }
 
 /**
