@@ -155,10 +155,11 @@
     "id": "a00dbd1e-9b60-428d-a7a5-f0a1ac73c4da",
     "type": "commitless",
     "name": "TS",
-    "description": "",
-    "date": "2025-12-12T12:34:00.000Z",
+    "description": "Nous avons fais le premier test sommatif",
+    "date": "2025-12-12T13:34",
     "duration": 30,
-    "status": "Done"
+    "status": "Done",
+    "author": "?"
   },
   {
     "id": "0eb929f5-7df5-453e-ae93-c3cf36188b1a",
@@ -168,5 +169,18 @@
     "date": "2025-12-12T14:35:00.000Z",
     "duration": 30,
     "status": "Done"
+  },
+  {
+    "id": "e5772581-9e5e-4195-89c8-62dd9cb68f93",
+    "type": "commitpatch",
+    "sha": "322c1290520a5af719ada11e31ebbc2612bc1069",
+    "url": "https://github.com/latifcodess/p-bulle-exercices-js-start/commit/322c1290520a5af719ada11e31ebbc2612bc1069",
+    "name": "feat(lucky-numbers): exercice finit",
+    "description": "j'ai mis 1h à le faire car sur la 2 eme fonction je n'arrivai pas à comprendre pourquoi je devais faire splice, reverse et join.",
+    "date": "2025-12-12T15:48",
+    "duration": 80,
+    "status": "Done",
+    "author": "latifcodess",
+    "patch": true
   }
 ]
