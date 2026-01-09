@@ -32,13 +32,6 @@ export function needsLicense(kind) {
  */
 export function chooseVehicle(option1, option2) {
   // verifie si option1 est avant option2 dans la table ASCII
-  /*if (option1 < option2){
-    return option1 + " is clearly the better choice.";
-  }
-  else{
-    return option2 + " is clearly the better choice.";
-  }*/
-
   return (option1 < option2) 
          ? option1 + " is clearly the better choice." 
          : option2 + " is clearly the better choice."
