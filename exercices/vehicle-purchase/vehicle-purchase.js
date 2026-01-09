@@ -12,13 +12,6 @@
  */
 export function needsLicense(kind) {
   // verifie si le vehicule est un car ou un truck
-  /*if (kind == "car" || kind == "truck"){
-    return true;
-  }
-  else{
-    return false;
-  }*/
-
   return (kind == "car" || kind == "truck") ? true : false;
 }
 
